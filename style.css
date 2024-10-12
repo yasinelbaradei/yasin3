@@ -69,6 +69,7 @@ h1 i {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    display: none;
 }
 
 #notesInput {
@@ -77,4 +78,11 @@ h1 i {
     outline-color: var(--main-color);
     font-size: 25px;
     padding: 10px;
+}
+
+p {
+    font-size: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }

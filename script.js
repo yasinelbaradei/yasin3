@@ -18,5 +18,15 @@ function addNote() {
 }
 
 function saveNotes() {
-    localStorage
+    const notesString = JSON.stringify(notesArray);
+    localStorage.setItem("notes", notesString);
+}
+
+function getNotes() {
+    const notesString = localStorage.getItem("notes")
+    if (notesString == null) {
+        console.log("no note found");   
+    } else {
+        notesArray = JSON.parse(notesString)
+    }
 }
