@@ -29,7 +29,7 @@
             <i class="bi bi-gear-fill"></i>
         </div>
     </div>
-    <div id="addNote">
+    <div id="addNote" data-bs-toggle="modal" data-bs-target="#myModal">
         <i class="bi bi-plus-circle-fill"></i>
     </div>
     <div id="zeroNotes">
@@ -37,5 +37,29 @@
         <h3>No notes found</h3>
     </div>
 
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Add note</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <textarea id="notesInput" rows="5" placeholder="type your note..."></textarea>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
 </body>
 </html>
