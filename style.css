@@ -70,3 +70,11 @@ h1 i {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+#notesInput {
+    width: 100%;
+    resize: none;
+    outline-color: var(--main-color);
+    font-size: 25px;
+    padding: 10px;
+}
