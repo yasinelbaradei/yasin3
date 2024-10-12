@@ -3,7 +3,10 @@ html {
     --hover-color: #2f3a9a;
 }
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
 h1 {
     font-family: "Sankofa Display", sans-serif;
@@ -80,9 +83,21 @@ h1 i {
     padding: 10px;
 }
 
-p {
+#paragraph {
     font-size: 28px;
     text-align: center;
     display: flex;
     justify-content: center;
+    color: #2f3a9a;
+}
+
+#notesDiv div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #dddffd;
+}
+
+#notesDiv div p {
+    margin: 0;
 }
