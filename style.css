@@ -96,6 +96,8 @@ h1 i {
     justify-content: space-between;
     padding: 20px;
     background-color: #dddffd;
+    font-size: 25px;
+    border-bottom: 2px solid var(--main-color);
 }
 
 #notesDiv div p {
