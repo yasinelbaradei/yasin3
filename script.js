@@ -1,8 +1,29 @@
 const noteInput = document.getElementById("notesInput");
-const notesDiv = document.getElementById("notesDiv")
-const zeroNotes = document.getElementById("zeroNotes")
+const notesDiv = document.getElementById("notesDiv");
+const zeroNotes = document.getElementById("zeroNotes");
+const optionDiv = document.getElementById("optionDiv");
+const loginDiv = document.getElementById("loginDiv");
+
 
 var notesArray = [];
+
+function showOption() {
+    optionDiv.style.display = "flex";
+    notesDiv.style.display = "none";
+    zeroNotes.style.display = "none";
+}
+
+function showHome() {
+    optionDiv.style.display = "none";
+    notesDiv.style.display = "block";
+    loginDiv.style.display = "none"
+    getNotes()
+}
+
+function showLogin() {
+    optionDiv.style.display = "none";
+    loginDiv.style.display = "flex";
+}
 
 function checkInput() {
     if (noteInput.value == "") {

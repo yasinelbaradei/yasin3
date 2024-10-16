@@ -21,17 +21,20 @@
         <p id="paragraph">every thing is Easy</p>
     </h1>
     <div id="bottomDiv">
+
         <div id="userDiv">
-            <i class="bi bi-person-fill"></i>
-        </div>
+          <i class="bi bi-house-door-fill" onclick="showHome()"></i>        </div>
 
         <div id="settingDiv">
-            <i class="bi bi-gear-fill"></i>
+            <i class="bi bi-person-fill" onclick="showOption()"></i>
         </div>
     </div>
+
     <div id="addNote" data-bs-toggle="modal" data-bs-target="#myModal">
+
         <i class="bi bi-plus-circle-fill"></i>
     </div>
+
     <div id="zeroNotes">
         <img src="images/folder.png" alt="">
         <h3>No notes found</h3>
@@ -65,5 +68,35 @@
   <div id="notesDiv">
     
   </div>
+  <!-- start options div -->
+    <div id="optionDiv">
+      <div>
+
+        <h3>please login to get data</h3>
+        <br><br>
+        <button class="btn btn-lg btn-success" onclick="showLogin()">login</button>
+        <br><br>
+        <button class="btn btn-lg btn-primary">signup</button>
+
+      </div>
+    </div>
+   <!-- end options div -->
+
+   <!-- start login div -->
+
+    <div id="loginDiv">
+
+      <div>
+        <input type="email" placeholder="enter your email">
+      <br><br>
+      <input type="password" placeholder="enter your password">
+      <br><br>
+      <button class="btn btn-lg btn-primary">login</button>
+      </div>
+      
+    </div>
+
+    <!-- end login div -->
+
 </body>
 </html>
