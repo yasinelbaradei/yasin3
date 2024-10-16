@@ -34,11 +34,11 @@ function getNotes() {
         if (notesArray.length > 0) {
             zeroNotes.style.display = "none";
             notesDiv.style.display = "block";
-            showNotes()
         } else {
-            zeroNotes.style.display = "none";
-            notesDiv.style.display = "block";
+            zeroNotes.style.display = "block";
+            notesDiv.style.display = "none";
         }
+        showNotes()
     }
 }
 
@@ -49,21 +49,21 @@ function showNotes() {
     for (let index = 0; index < notesArray.length; index++) {
         const element = notesArray[index];
 
-        const newDiv = document.
+        const newDiv = document.createElement("div");
 
-        createElement("div");
         const newP = document.createElement("p");
-
         newP.innerText = element;
-
         newDiv.appendChild(newP);
 
-        const newIcon = document.createElement("i");
-
-        newIcon.className = "bi bi-trash";
-
-        newDiv.appendChild(newIcon);
-
+        const deleteButton = document.createElement("i");
+        deleteButton.className = "bi bi-trash";
+        deleteButton.onclick = function () {
+            if (confirm("are you sure to delete note?") == true) {
+                notesArray.splice(index, 1);
+                saveNotes()   
+            }
+        }
+        newDiv.appendChild(deleteButton);
         notesDiv.appendChild(newDiv);
     }
 }
