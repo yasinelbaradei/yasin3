@@ -8,7 +8,7 @@ html {
     margin: 0;
 }
 
-h1 {
+h5 {
     font-family: "Sankofa Display", sans-serif;
     font-weight: 900;
     color: var(--main-color);
@@ -127,7 +127,7 @@ h1 i {
 #loginDiv div {
     width: 100%;
     text-align: center;
-    border: 2px solid darkblue;
+    border: 2px solid lightblue;
     padding: 40px 20px;
     background-image: linear-gradient(white, aqua);
     border-radius: 20px;
@@ -164,4 +164,55 @@ h1 i {
     padding: 50px;
     border: 2px solid darkblue;
     border-radius: 20px;
+}
+
+#AdsDiv {
+    position: absolute;
+    top: 15vh;
+    left: 20px;
+    display: none;
+}
+#AdsDiv div {
+    width: 200px;        
+    height: 230px;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+
+    #notesDiv {
+        width: 600px;
+        margin-right: 0;
+    }
+
+    #notesDiv div {
+        margin-bottom: 20px;
+        border: 3px solid var(--main-color);
+        border-radius: 20px;
+    }
+
+    #bottomDiv {
+        right: 0;
+        left: auto;
+        top: 0;
+    }
+
+    #userDiv {
+        padding: 20px;
+    }
+
+    #settingDiv {
+        padding: 20px;
+    }
+
+    #AdsDiv {
+        display: block;   
+    }
+
 }

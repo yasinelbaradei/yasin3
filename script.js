@@ -56,7 +56,7 @@ function addNote() {
 function saveNotes() {
     const notesString = JSON.stringify(notesArray);
     localStorage.setItem("notes", notesString);
-    getNotes()
+    getNotes();
 }
 
 function getNotes() {
