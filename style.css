@@ -116,13 +116,21 @@ h1 i {
     width: 80%;
 }
 #loginDiv {
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
     height: 77vh;
     display: none;
     justify-content: center;
     align-items: center;    
 }
 #loginDiv div {
+    width: 100%;
     text-align: center;
+    border: 2px solid darkblue;
+    padding: 40px 20px;
+    background-image: linear-gradient(white, aqua);
+    border-radius: 20px;
 }
 
 #loginDiv div button {
@@ -134,4 +142,26 @@ h1 i {
     width: 100%;
     border-radius: 10px;
 
+}
+
+#loginDiv #loginError {
+    font-size: 22px;
+    color: red;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#detailsDiv {
+    margin: auto;
+    height: 77vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#detailsDiv div {
+    text-align: center;
+    padding: 50px;
+    border: 2px solid darkblue;
+    border-radius: 20px;
 }

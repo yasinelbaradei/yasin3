@@ -87,16 +87,32 @@
     <div id="loginDiv">
 
       <div>
-        <input type="email" placeholder="enter your email">
+        <p id="loginError">login failed please check your email and password</p>
+        <input type="email" placeholder="enter your email" id="loginEmail">
       <br><br>
-      <input type="password" placeholder="enter your password">
+      <input type="password" placeholder="enter your password" id="loginPassword">
       <br><br>
-      <button class="btn btn-lg btn-primary">login</button>
+      <button class="btn btn-lg btn-primary" onclick="loginUser()">login</button>
       </div>
       
     </div>
 
     <!-- end login div -->
+     <!-- start userDiv -->
+
+      <div id="detailsDiv">
+        <div>
+          <h3 id="greetingText"></h3>
+          <br>
+          <button class="btn btn-lg btn-primary" onclick="downLoadNotes()">download Notes</button>
+          <br><br>
+          <button class="btn btn-lg btn-success" onclick="UpLoadNotes()">Upload Notes</button>
+          <br><br>
+          <button class="btn btn-lg btn-danger" onclick="logOutUser()">sign out</button>
+        </div>
+      </div>
+
+      <!-- end userDiv -->
 
 </body>
 </html>
