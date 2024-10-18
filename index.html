@@ -88,11 +88,15 @@
 
       <div>
         <p id="loginError">login failed please check your email and password</p>
+        <label for="">E-mail</label>
+        <br>
         <input type="email" placeholder="enter your email" id="loginEmail">
-      <br><br>
-      <input type="password" placeholder="enter your password" id="loginPassword">
-      <br><br>
-      <button class="btn btn-lg btn-primary" onclick="loginUser()">login</button>
+        <br><br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" placeholder="enter your password" id="loginPassword">
+        <br><br>
+        <button class="btn btn-lg btn-primary" onclick="loginUser()">login</button>
       </div>
       
     </div>
@@ -129,6 +133,31 @@
         </div>
 
       <!-- end Ads div -->
+      <!-- start signup div -->
 
+        <div id="signupDiv">
+
+          <div>
+            
+            <p id="signUpError">signup failed! please check your email and password</p>
+            <label for="">Name</label>
+            <br>
+            <input type="text" name="" id="signUpName" placeholder="Enter your Name">
+            <br><br>
+            <label for="">E-mail</label>
+            <br>
+            <input type="email" name="" id="signUpEmail" placeholder="Enter your email">
+            <br><br>
+            <label for="">Password</label>
+            <br>
+            <input type="password" name="" id="signUpPassword" placeholder="Enter your password">
+            <br><br>
+            <button class="btn btn-lg btn-primary" onclick="signUpUser()">Signup</button>
+
+          </div>
+
+        </div>
+
+      <!-- End signup div -->
 </body>
 </html>

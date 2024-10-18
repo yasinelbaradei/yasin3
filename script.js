@@ -8,6 +8,12 @@ const loginPassword = document.getElementById("loginPassword");
 const loginError = document.getElementById("loginError");
 const detailsDiv = document.getElementById("detailsDiv");
 const greetingText = document.getElementById("greetingText");
+const signUpError = document.getElementById("signUpError");
+const signUpName = document.getElementById("signUpName");
+const signUpEmail = document.getElementById("signUpEmail");
+const signUpPassword = document.getElementById("signUpPassword");
+const signupDiv = document.getElementById("signupDiv")
+
 
 var notesArray = [];
 
@@ -131,6 +137,32 @@ async function loginUser() {
         detailsDiv.style.display = "flex";
     } else {
         loginError.style.display = "block";
+    }
+    
+}
+
+async function signUpUser() {
+
+    signupDiv.style.display = "flex"
+    signUpError.style.display = "none"
+
+    const APIUrl = `https://tatbeqak.site/apps/tatbeqey/apps/easynotes/signup?email=${signUpEmail.value}&password=${signUpPassword.value}&name=${signUpName.value}`;
+
+    const response = await fetch(APIUrl);
+
+    const data = response.json();
+
+    const status = data.status;
+
+    if (status == true) {
+
+        alert("signup done");
+        location.reload();
+    } else {
+
+        alert("signup failed!")
+
+        signUpError.style.display = "block";
     }
     
 }

@@ -127,10 +127,14 @@ h1 i {
 #loginDiv div {
     width: 100%;
     text-align: center;
-    border: 2px solid lightblue;
+    border: 2px double gold;
     padding: 40px 20px;
-    background-image: linear-gradient(white, aqua);
     border-radius: 20px;
+}
+
+#loginDiv div label {
+    font-size: x-large;
+    color: red;
 }
 
 #loginDiv div button {
@@ -182,6 +186,30 @@ h1 i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#signupDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+
+#signupDiv label {
+    color: #4855CD;
+}
+
+#signupDiv input {
+    border: 3px double gold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#signUpError {
+    display: none;
 }
 
 @media (min-width: 1200px) {
